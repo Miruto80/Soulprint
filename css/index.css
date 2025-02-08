@@ -53,12 +53,6 @@ header img { /* Logo más grande inicialmente */
 }
 
 /* Ajuste del contenedor del logo y título */
-header {
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap; /* Evita que se desborden los elementos del contenedor */
-    overflow: hidden; /* Asegura que los elementos no salgan del contenedor */
-}
 
 /* Ajuste del título */
 header h1 {
