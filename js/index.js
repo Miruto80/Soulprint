@@ -115,8 +115,8 @@ return 0;
 
 let currentImageIndex = 0;
 const images = [
-    "imagenes/Sueters pareja.jpeg", 
-    "imagenes/Banner.jpeg"
+    "imagenes/Banner.jpeg",
+    "imagenes/Sueters pareja.jpeg" 
 ];
 const carouselBg = document.getElementById("carousel-bg");
 
