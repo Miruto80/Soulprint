@@ -52,6 +52,9 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#Articles">Articles</a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Reviews.php">Reviews</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -261,6 +264,35 @@
 </div>
 </div>
 </div>
+
+<section id="reviewsList" >
+  <h3 class="text-center">Recent Reviews</h3>
+  <?php
+  $conn = new mysqli('localhost', 'root', '', 'ReviewsSoul');
+   if ($conn->connect_error) {
+     die("Connection failed: " . $conn->connect_error);
+   }
+          $result = $conn->query("SELECT name, rating, review, created_at FROM reviews ORDER BY created_at DESC LIMIT 3");
+          if ($result->num_rows > 0) {
+            while ($row = $result->fetch_assoc()) {
+              $stars = str_repeat('★', $row['rating']) . str_repeat('☆', 5 - $row['rating']);
+              
+              // Formatear la fecha a un formato más amigable (February 9, 2025)
+              $created_at = date("F j, Y", strtotime($row['created_at']));
+              
+              echo "<div>
+                      <strong>" . htmlspecialchars($row['name']) . " <span class='star-rating'>($stars)</span></strong>
+                      <p>" . htmlspecialchars($row['review']) . "</p>
+                      <small>Reviewed on: $created_at</small>
+                    </div>";
+            }
+          } else {
+            echo "<p>No reviews yet. Be the first to leave one!</p>";
+          }
+          $conn->close();
+          ?>
+<button onclick="location.href='Reviews.php'">Leave a review here</button>
+</section>
 
 
 
