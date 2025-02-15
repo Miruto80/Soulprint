@@ -337,6 +337,25 @@ body {
     margin: 5px 0 10px 0;
     border: 1px solid #ccc;
 }
+
+.form-container label {
+    display: block; /* Asegura que el label se coloque en una nueva línea */
+    font-weight: bold;
+    margin-bottom: 5px; /* Espaciado entre el label y el textarea */
+}
+
+.form-container textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    height: 90px;
+    resize: none;
+    font-size: 1rem;
+    display: block; /* Asegura que el textarea ocupe toda la línea */
+}
+
+
 #message{
     height: 90px;
 }

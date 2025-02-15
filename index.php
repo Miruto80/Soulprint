@@ -311,8 +311,9 @@
         <span id="scontact" class="errorform"></span>
 
         <label for="message">Message</label>
-        <input type="text" name="message" id="message" placeholder="Your message" required>
+        <textarea name="message" id="message" placeholder="Your message" required></textarea>
         <span id="smessage" class="errorform"></span>
+
 
         <label for="car">Interest in</label>
         <input type="text" name="car" id="car" readonly>
