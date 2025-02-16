@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Soulprint Creative, where your imagination becomes our creation. Discover unique, personalized products including clothes, mugs, banners, and more. Custom designs that reflect your essence, created with passion and attention to detail.">
+    <meta name="keywords" content="Soulprint Creative, personalized products, custom designs, custom clothes, unique gifts, creative design, personalized shirts, mugs, tumblers, banners, family business, fashion, gifts, creative crafts, custom apparel">
     <link rel="shortcut icon" href="imagenes/Logo2.png" type="image/x-icon">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
