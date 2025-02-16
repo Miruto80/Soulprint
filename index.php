@@ -268,7 +268,7 @@
 <section id="reviewsList" >
   <h3 class="text-center">Recent Reviews</h3>
   <?php
-  $conn = new mysqli('localhost', 'u417714339_Soulprint', 'Basededatos13.', 'u417714339_ReviewsSoul');
+  $conn = new mysqli('localhost', 'root', '', 'ReviewsSoul');
    if ($conn->connect_error) {
      die("Connection failed: " . $conn->connect_error);
    }
@@ -299,7 +299,7 @@
 <div id="contactForm" class="form-popup">
     <form class="form-container" action="https://formspree.io/f/xzzdgjwz" method="POST" onsubmit="return validarenvio()">
         <div class="form-header">
-            <h2>Request Information</h2>
+            <h3>Request Information</h3>
             <button type="button" class="close-icon" onclick="closeForm()">✖</button>
         </div>
         <label for="name">Name</label>

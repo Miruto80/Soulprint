@@ -1,6 +1,6 @@
 function openForm(car) {
     document.getElementById('car').value = car;
-    document.getElementById('contactForm').style.display = 'block';
+    document.getElementById('contactForm').style.display = 'flex';
 }
 
 function closeForm() {
